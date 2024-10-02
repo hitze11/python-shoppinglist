@@ -3,22 +3,22 @@
 # Leere Einkaufsliste
 shoppinglist = []
 
-# Funktion zum Hinzufügen eines Artikels
+#  Hinzufügen eines Artikels
 def add_item():
     item = input("Welche Artikel sollen dem Einkaufszettel hinzugefügt werden?: ")
     shoppinglist.append(item)
     print(f"{item} wurde dem Eikaufszettel hinzugefügt.")
 
-# Funktion zum Anzeigen der Einkaufsliste
+# Anzeigen der Einkaufsliste
 def show_shoppinglist():
-    if shoppinglist:  # Überprüfen, ob die Liste nicht leer ist
+    if shoppinglist:
         print("Einkaufszettel:")
         for item in shoppinglist:
-            print(f"- {item}")  # F-String zum Formatieren der Ausgabe
+            print(f"- {item}")  
     else:
-        print("Dein Einkaufszettelist leer.")
+        print("Dein Einkaufszettel ist leer.")
 
-# Hauptfunktion, um den Programmfluss zu steuern
+# Hauptfunktion, um das Programm zu steuern
 def main():
     while True:
         print("\n----- Einkaufszettel -----")
@@ -35,7 +35,7 @@ def main():
             show_shoppinglist()
         elif choice == "3":
             print("Programm wird beendet! Auf Wiedersehen.")
-            break  # Beendet die Schleife und damit das Programm
+            break  
         else:
             print("Ungültige Auswahl. Bitte wähle 1, 2 oder 3.")
 
