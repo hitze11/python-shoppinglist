@@ -9,7 +9,14 @@ def add_item():
     shoppinglist.append(item)
     print(f"{item} wurde der Einkaufsliste hinzugefügt.")
 
+# Anzeigen der Einkaufsliste
+def show_shoppinglist():
+    if shoppinglist == []:
+        print("Noch keine Artikel hinzugefügt.")
+    else:
+        for item in shoppinglist:
+            print(item)
+
 # Einkaufsliste mit Arikeln
 if __name__ == "__main__":
-    add_item()
-    print("Aktuelle Einkaufsliste:", shoppinglist)
+    show_shoppinglist()
